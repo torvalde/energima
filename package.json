@@ -19,8 +19,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "pretest-ci": "build-storybook",
-    "test-ci": "loki --requireReference --reactUri file:./storybook-static",
-    "commit": "npx git-cz"
+    "test-ci": "loki --requireReference --reactUri file:./storybook-static"
   },
   "eslintConfig": {
     "extends": "react-app"
