@@ -50,7 +50,10 @@
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "cz-conventional-changelog": "3.1.0",
-    "loki": "^0.20.3"
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "loki": "^0.20.3",
+    "prettier": "2.0.4"
   },
   "loki": {
     "configurations": {
@@ -62,5 +65,13 @@
         "mobile": false
       }
     }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "prettier --write"
   }
 }
