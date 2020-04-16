@@ -21,5 +21,10 @@ jobs:
       - run: yarn run build
       - run: yarn test
       - run: yarn run test-ci
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: loki
+          path: .loki/difference
         env:
           CI: true
