@@ -1,68 +1,128 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Test project for new Energima frontend stack
 
-## Available Scripts
 
-In the project directory, you can run:
+Here I will test out a few technologies to learn them and see if we can use them at Energima
 
-### `yarn start`
+## Process
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Github Flow
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+As a workflow I suggest we use Github flow. This aligns well with Cognite and 
+we can include tools in the build process that also follow this model, like bots
+that make pull requests when dependencies has been updated/has vulnerabilities.
 
-### `yarn test`
+https://guides.github.com/introduction/flow/ 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design
 
-### `yarn build`
+### Ant Design Pro
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The component library in Cognite is based on Ant Design so it makes sense for us to
+use it on our end to complement the Cognite components.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+https://pro.ant.design/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Figma
 
-### `yarn eject`
+We need a simple tool to create ui mockups and prototypes. I have had good experience 
+with Figma for this before.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://www.figma.com/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Languages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The Enigma frontend code is written in Typescript. Typescript is a superset of Javascript
+that compiles to Javascript and add typechecking and other useful features.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://www.typescriptlang.org/
 
-## Learn More
+## Quality
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ESLint
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We use ESLint for static code checking with the standard settings from create-react-app.
+This can be extended later.
 
-### Code Splitting
+https://eslint.org/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Prettier
 
-### Analyzing the Bundle Size
+Prettier is an opinionated code formatter used before we check in code.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+https://prettier.io/
 
-### Making a Progressive Web App
+### Storybook
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Storybook is used by Cognite to showcase their UI components, but is also a great tool 
+to use during our internal development. We use it for manual testing of edge cases 
+during development and to communicate our components internally.
 
-### Advanced Configuration
+https://storybook.js.org/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Loki
 
-### Deployment
+Visual regression test for storybook
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+https://github.com/oblador/loki
 
-### `yarn build` fails to minify
+### Cypress
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+We want to include a simple integration test in our stack. The integration test will
+log into a running instance, perform some actions as a normal user would and record 
+the results.
+
+https://www.cypress.io/
+
+### Jest
+
+Jest is the standard testing framework for React, built by Facebook. This is also in 
+use by Cognite.
+ 
+https://jestjs.io/
+
+### Jest-when
+
+Jest when simplifies function mocking. 
+
+https://www.npmjs.com/package/jest-when
+
+### React testing library
+
+React testing library is a light-weight solution to test react components by rendering
+them to dom nodes. The Cognite tests still uses Enzyme for but I belive React testing
+framework is better for us. 
+
+https://testing-library.com/docs/react-testing-library/intro
+
+## Libraries
+
+### Redux toolkit
+
+Redux toolkit simplifies React Redux development.
+
+https://redux-toolkit.js.org/
+
+## Utilities
+
+### Lodash
+
+Lodash is a simple utility library with many useful everyday functions.
+
+https://lodash.com/
+
+## Automation
+
+### Github Continuous Integration 
+
+We use Github to run our tests after each checkin to master. This is included for 
+free with Github and integrates easily. If the test goes well we publish an 
+updated storybook.
+
+https://help.github.com/en/actions/building-and-testing-code-with-continuous-integration/about-continuous-integration
+
+### Dependabot
+
+Dependabot regularly checks the version number of our dependencies and creates a pull 
+request with a new version if it finds one that pass our tests.
+
+https://dependabot.com/
