@@ -89,5 +89,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "prettier --write"
+  },
+  "storybook-deployer": {
+    "gitUsername": "Storybook Deployer",
+    "gitEmail": "action@github.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
   }
 }
