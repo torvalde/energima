@@ -94,6 +94,8 @@ framework is better for us.
 
 https://testing-library.com/docs/react-testing-library/intro
 
+###
+
 ## Libraries
 
 ### Redux toolkit
@@ -126,3 +128,19 @@ Dependabot regularly checks the version number of our dependencies and creates a
 request with a new version if it finds one that pass our tests.
 
 https://dependabot.com/
+
+## Tools
+
+### Git
+
+We use Git for version control. It is important that our team are comfortable with
+advanced concepts in Git like squashing commits, amending commits and interactive 
+rebase. 
+
+https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-history
+
+### Github desktop
+
+Simplify your git development workflow.
+
+https://desktop.github.com/
