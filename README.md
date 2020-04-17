@@ -13,14 +13,13 @@ that make pull requests when dependencies has been updated/has vulnerabilities.
 
 https://guides.github.com/introduction/flow/ 
 
-## Design
+## Design / Prototyping
 
-### Ant Design Pro
+### Paper prototyping
 
-The component library in Cognite is based on Ant Design so it makes sense for us to
-use it on our end to complement the Cognite components.
+We use paper prototyping for early stage contextualizing.
 
-https://pro.ant.design/
+https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/
 
 ### Figma
 
@@ -30,6 +29,8 @@ with Figma for this before.
 https://www.figma.com/
 
 ## Languages
+
+### Typescript
 
 The Enigma frontend code is written in Typescript. Typescript is a superset of Javascript
 that compiles to Javascript and add typechecking and other useful features.
@@ -94,9 +95,14 @@ framework is better for us.
 
 https://testing-library.com/docs/react-testing-library/intro
 
-###
-
 ## Libraries
+
+### Ant Design Pro
+
+The gui component library in Cognite is based on Ant Design so it makes sense for us to
+use it on our end to complement the Cognite components.
+
+https://pro.ant.design/
 
 ### Redux toolkit
 
@@ -131,6 +137,19 @@ https://dependabot.com/
 
 ## Tools
 
+### Visual studio code
+
+Visual studio code is a cross platform and popular development environment.
+
+https://code.visualstudio.com/
+
+### Create react app
+
+Creates a standard frontend pipeline that is easily upgradable by upgrading the 
+version on react-scripts.
+
+https://reactjs.org/docs/create-a-new-react-app.html
+
 ### Git
 
 We use Git for version control. It is important that our team are comfortable with
@@ -144,3 +163,24 @@ https://thoughtbot.com/blog/git-interactive-rebase-squash-amend-rewriting-histor
 Simplify your git development workflow.
 
 https://desktop.github.com/
+
+### Oh my ZSH!
+
+Improve your terminal shell.
+
+https://ohmyz.sh/
+
+## Integrations
+
+### Power BI
+
+If needed we can integrate Power BI from microsoft in our interface, if it is easier
+to create a business dashboard here.
+
+## Web pages
+
+https://stackshare.io/
+https://www.thoughtworks.com/radar
+
+
+
