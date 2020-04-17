@@ -7,9 +7,8 @@ export const store = configureStore({
   },
 });
 
-// @ts-ignore
 export type RootState = ReturnType<typeof store.getState>;
-// @ts-ignore
+
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   RootState,
