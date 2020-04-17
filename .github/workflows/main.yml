@@ -45,4 +45,6 @@ jobs:
         env:
           CI: true
       - name: Deploy storybook
-        run: yarn run deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
+        env:
+          GH_TOKEN: torvalde:${{secrets.GITHUB_TOKEN}}
+        run: yarn run deploy-storybook -- --ci
