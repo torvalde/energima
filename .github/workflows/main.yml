@@ -44,3 +44,5 @@ jobs:
           path: .loki/difference
         env:
           CI: true
+      - name: Deploy storybook
+        run: yarn run deploy-storybook -- --ci
