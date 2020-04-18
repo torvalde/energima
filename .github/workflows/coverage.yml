@@ -1,6 +1,6 @@
 name: Coverage
 
-on: [pull]
+on: [pull_request]
 
 jobs:
   build:
