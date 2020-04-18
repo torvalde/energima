@@ -154,7 +154,7 @@ https://code.visualstudio.com/
 ### Create react app
 
 Creates a standard frontend pipeline that is easily upgradable by upgrading the 
-version on react-scripts.
+version of react-scripts.
 
 https://reactjs.org/docs/create-a-new-react-app.html
 
@@ -200,8 +200,8 @@ to create a business dashboard here.
 
 ## Web pages
 
-https://stackshare.io/
-https://www.thoughtworks.com/radar
+* https://stackshare.io/
+* https://www.thoughtworks.com/radar
 
 
 
