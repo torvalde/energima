@@ -96,7 +96,7 @@ framework is better for us.
 
 https://testing-library.com/docs/react-testing-library/intro
 
-### Instanbul
+### Istanbul
 
 Istanbul is a test coverage tool that is build into Jest. We use it to automatically
 add a test coverage report to each pull request.
