@@ -33,9 +33,10 @@ https://www.figma.com/
 ### Typescript
 
 The Enigma frontend code is written in Typescript. Typescript is a superset of Javascript
-that compiles to Javascript and add typechecking and other useful features.
+that compiles to Javascript and adds typechecking, Optional chaining, Nullish Coalescing 
+and other useful features.
 
-https://www.typescriptlang.org/
+https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/
 
 ## Quality
 
@@ -169,6 +170,19 @@ https://desktop.github.com/
 Improve your terminal shell.
 
 https://ohmyz.sh/
+
+### Postman
+
+Test and explore rest apis.
+
+https://www.postman.com/
+
+### Slack
+
+Slack simplifies communication within a team and integrates well with other tools
+in the toolchain.
+
+https://slack.com/
 
 ## Integrations
 
