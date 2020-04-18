@@ -96,6 +96,13 @@ framework is better for us.
 
 https://testing-library.com/docs/react-testing-library/intro
 
+### Instanbul
+
+Istanbul is a test coverage tool that is build into Jest. We use it to automatically
+add a test coverage report to each pull request.
+
+https://istanbul.js.org/
+
 ## Libraries
 
 ### Ant Design Pro
