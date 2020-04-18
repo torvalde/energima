@@ -22,15 +22,17 @@
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
     "update-storybook-screenshots": "yarn loki update",
     "test-storybook-screenshots": "yarn loki test",
+    "approve-storybook-screenshots": "yarn loki update",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
@@ -63,6 +65,7 @@
     "@types/axios-mock-adapter": "^1.10.0",
     "@types/redux-mock-store": "^1.0.2",
     "axios-mock-adapter": "^1.18.1",
+    "cypress": "^4.4.0",
     "cz-conventional-changelog": "3.1.0",
     "husky": ">=4",
     "jest-when": "^2.7.1",
@@ -94,5 +97,22 @@
     "gitUsername": "Storybook Deployer",
     "gitEmail": "action@github.com",
     "commitMessage": "Deploy Storybook to GitHub Pages"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "text"
+    ]
   }
 }
