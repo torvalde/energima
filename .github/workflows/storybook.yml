@@ -1,4 +1,4 @@
-name: Run Tests
+name: Storybook
 
 on: [push]
 
@@ -32,5 +32,17 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn run build
-      - name: Test
-        run: yarn test
+      - name: Visual test
+        run: yarn run test-ci
+      - name: Upload visual failures
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: loki
+          path: .loki/difference
+        env:
+          CI: true
+      - name: Deploy storybook
+        env:
+          GH_TOKEN: torvalde:${{secrets.GITHUB_TOKEN}}
+        run: yarn run deploy-storybook -- --ci
