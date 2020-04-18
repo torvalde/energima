@@ -1,6 +1,6 @@
-name: Run Tests
+name: Coverage
 
-on: [push]
+on: [pull]
 
 jobs:
   build:
@@ -32,5 +32,8 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn run build
-      - name: Test
-        run: yarn test
+      - name: Test Coverage
+        uses: ziishaned/jest-reporter-action@v0.0.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          test-command: "yarn jest --coverage"
