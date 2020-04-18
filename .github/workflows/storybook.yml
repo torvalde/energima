@@ -7,9 +7,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [12.x]
@@ -29,8 +27,7 @@ jobs:
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn
+          restore-keys: ${{ runner.os }}-yarn
       - uses: actions/cache@v1
         name: Cache node_modules
         id: cache-node-modules
@@ -56,4 +53,4 @@ jobs:
       - name: Deploy storybook
         env:
           GH_TOKEN: torvalde:${{secrets.GITHUB_TOKEN}}
-        run: yarn run deploy-storybook -- --ci
+        run: yarn run deploy-storybook --ci
