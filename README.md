@@ -3,6 +3,10 @@
 
 Here I will test out a few technologies to learn them and see if we can use them at Energima
 
+## Tasks
+
+<blockquote class="trello-card"><a href="https://trello.com/c/VR5gddOt/17-learn-quality-tools">Learn Quality tools</a></blockquote><script src="https://p.trellocdn.com/embed.min.js"></script>
+
 ## Process
 
 ### Github Flow
@@ -151,12 +155,26 @@ Visual studio code is a cross platform and popular development environment.
 
 https://code.visualstudio.com/
 
+### Trello
+
+Not completely sure about this one, but we need some kind of tool to plan and coordinate
+our work. I have often used Trello for this.
+
+https://trello.com/
+
 ### Create react app
 
 Creates a standard frontend pipeline that is easily upgradable by upgrading the 
 version of react-scripts.
 
 https://reactjs.org/docs/create-a-new-react-app.html
+
+### Bit
+
+Bit is an open-source cli tool for collaborating on isolated components across projects 
+and repositories. We can use this increase code reuse for our frontend.
+
+https://bit.dev
 
 ### Git
 
@@ -190,6 +208,25 @@ Slack simplifies communication within a team and integrates well with other tool
 in the toolchain.
 
 https://slack.com/
+
+### Chrome dev tools
+
+Chrome DevTools is a set of web developer tools built directly into the Google Chrome 
+browser. DevTools helps you identify problems and performance issues in your page.
+
+https://developers.google.com/web/tools/chrome-devtools
+
+### Redux DevTools
+
+Redux devtools lets you debug you redux store in the browser.
+
+https://chrome.google.com/webstore/detail/redux-devtools/
+
+### React Developer Tools
+
+React devtools lets you inspect react components in the browser.
+
+https://chrome.google.com/webstore/detail/react-developer-tools
 
 ## Integrations
 
