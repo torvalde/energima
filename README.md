@@ -5,7 +5,7 @@ Here I will test out a few technologies to learn them and see if we can use them
 
 ## Tasks
 
-<blockquote class="trello-card"><a href="https://trello.com/c/VR5gddOt/17-learn-quality-tools">Learn Quality tools</a></blockquote><script src="https://p.trellocdn.com/embed.min.js"></script>
+https://trello.com/b/sR4Fqr3a/energima-onboarding
 
 ## Process
 
