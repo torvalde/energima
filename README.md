@@ -17,6 +17,15 @@ that make pull requests when dependencies has been updated/has vulnerabilities.
 
 https://guides.github.com/introduction/flow/ 
 
+### Github project management
+
+We can use Github issues and milestones to plan feature development and bug fixing. It is
+possible to categorize the issues with labels like feature request, ideas or bugs. 
+Pull requests can be linked to their issues. Boards can be used to get an overview of 
+over projects. The boards can be automatically updated as we work on the issues. 
+
+https://github.com/features/project-management/
+
 ## Design / Prototyping
 
 ### Paper prototyping
@@ -154,13 +163,6 @@ https://dependabot.com/
 Visual studio code is a cross platform and popular development environment.
 
 https://code.visualstudio.com/
-
-### Trello
-
-Not completely sure about this one, but we need some kind of tool to plan and coordinate
-our work. I have often used Trello for this.
-
-https://trello.com/
 
 ### Create react app
 
